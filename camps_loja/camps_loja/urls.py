@@ -19,7 +19,7 @@ urlpatterns = [
     path('cadastro/', views.cadastro, name='cadastro'),
     path('logout/', auth_views.LogoutView.as_view(next_page='home'), name='logout'),
     path('produto/<int:pk>/', ProdutoDetailView.as_view(), name='produto_detail'),
-     path('carrinho/', views.carrinho, name='carrinho'),
+    path('carrinho/', views.carrinho, name='carrinho'),
     path('adicionar/<int:produto_id>/', views.adicionar_ao_carrinho, name='adicionar_ao_carrinho'),
     path('remover/<int:item_id>/', views.remover_do_carrinho, name='remover_do_carrinho'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

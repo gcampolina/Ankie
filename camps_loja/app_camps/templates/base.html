@@ -158,9 +158,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/logout/' %}active{% endif %}"
-                            href="{% url 'logout' %}">
-                            <i class="fa-solid fa-right-from-bracket"></i> Sair </a>
+                        <form method="POST" action="{% url 'logout' %}">
+                            {% csrf_token %}
+                            <button class="nav-link btn btn-link {% if request.path == '/logout/' %}active{% endif %}">
+                                <i class="fa-solid fa-right-from-bracket"></i> SAIR
+                            </button>
+                        </form>
                     </li>
 
                     <li class="nav-item">
