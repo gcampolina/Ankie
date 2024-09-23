@@ -245,8 +245,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a style="border-left: 4px solid #cac9c9;"
-                            class="nav-link {% if request.path == '/carrinho/' %}active{% endif %}"
+                        <a 
+                            class="nav-link cart {% if request.path == '/carrinho/' %}active{% endif %}"
                             href="{% url 'carrinho' %}">
                             <i class="fa-solid fa-cart-shopping" action="{% url 'carrinho' %}"></i></a>
                     </li>   
