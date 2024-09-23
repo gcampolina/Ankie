@@ -71,11 +71,11 @@
         }
 
         .imgproduto {
-            max-width: 100%;
-            /* Imagens dentro do produto não ultrapassam a largura do contêiner */
-            height: 100%;
-            /* Mantém a proporção da imagem */
-            border-radius: 10px;
+            max-width: 360px; /* Largura máxima */
+            max-height: 360px; /* Altura máxima */
+            width: auto; /* Mantém a proporção */
+            height: auto; /* Mantém a proporção */
+            object-fit: cover; /* Cobre o espaço mantendo a proporção */
         }
 
 

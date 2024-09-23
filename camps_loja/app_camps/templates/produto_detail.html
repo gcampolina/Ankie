@@ -47,58 +47,55 @@
             margin-right: 8px;
         }
 
-        .botoes {
-            display: flex;
-            justify-content: center;
-            /* Alinha os itens ao centro do eixo principal */
-            margin-top: 120px;
-            /* Espaçamento entre os detalhes e os botões */
-            margin-bottom: 20px;
-            margin-left: 100px;
-        }
+        
 
         .desc {
-            
             display: flex;
             /* Divide a área em duas colunas, uma para a imagem e outra para as informações */
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             background-color: white;
-            align-items: flex-start;
-            /* Alinha os itens ao início do eixo transversal (no topo) */
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            padding: 20px;
-            max-width: 1000px;
-            border-radius: 50px;
-            align-items: center;
-        }
-
-
-
-        .imgproduto-container {
-            
-            text-align: center;
             justify-content: center;
-            /* Centraliza horizontalmente */
+            /* Alinha os itens ao início do eixo transversal (no topo) */
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            max-width: 1000px;
+            border-radius: 10px;
             align-items: center;
-            /* Centraliza verticalmente */
-            padding: 10px;
-            /* Adiciona um pouco de espaço interno */
-
         }
 
-        .imgproduto {
-            border-radius: 20px;
-            width: 100%;
-            max-width: 400px;
+        .infos {
+            display: flex; /* Usar flexbox para alinhar itens */
+            flex-direction: column; /* Alinha os itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            text-align: center; /* Centraliza o texto */
+            padding-bottom: 30px;
         }
-
 
         .info-produto {
-            margin-left: 100px;
-            flex-grow: 1;
+            margin-bottom: 20px; /* Espaço entre os elementos dentro de infos */
         }
 
+        .botoes {
+            margin-top: 5px; /* Espaço acima dos botões */
+            display: flex; /* Usar flexbox para os botões */
+            justify-content: center; /* Centraliza os botões */
+            gap: 5px; /* Espaço entre os botões */
+        }
+
+
+        
+
+        .imgproduto {
+            
+            max-width: 360px; /* Largura máxima */
+            max-height: 360px; /* Altura máxima */
+            width: auto; /* Mantém a proporção */
+            height: auto; /* Mantém a proporção */
+            object-fit: cover; /* Cobre o espaço mantendo a proporção */
+        }
+
+
+        
         .textpreco {
             font-size: 1.5rem;
             font-weight: bold;
